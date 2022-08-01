@@ -1,8 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  Filename: thesisdtetiugm.cls
-%%%  Class File  for Master Thesis at DTETI UGM
-%%%  --- 
-%%%  Written by Canggih Puspo Wibowo
+%%%  Filename: thesisfkugm.cls
+%%%  Class File  for Bachelor/Master/Doctoral Thesis at FK UGM
+%%%  ---
+%%%  Modified by Mohammad Rizki [mohammadrizki.md@gmail.com]
+%%%  from thesisdtetiugm.cls written by Canggih Puspo Wibowo
 %%%  [canggihpw@gmail.com]
 %%%  ---
 %%%  This class file can be freely modified
@@ -12,7 +13,7 @@
 %% Identification
 %======================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{thesisdtetiugm}[2018/02/08]
+\ProvidesClass{thesisfkugm}[2022/08/01]
 
 %======================================
 %% Initial Code
@@ -165,7 +166,7 @@
 }
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{6pt}
-\setlength{\footskip}{1.5cm} 
+\setlength{\footskip}{1.5cm}
 \setlength{\topskip}{1ex}
 \pgfplotsset{compat=1.16}
 
@@ -174,7 +175,7 @@
 %======================================
 % Author info
 \renewcommand*{\author}[2]{
-	\newcommand{\@authorName}{#1} 
+	\newcommand{\@authorName}{#1}
 	\newcommand{\@authorID}{#2}
 }
 % Thesis info
@@ -223,10 +224,10 @@
 
 % Department info
 \newcommand{\@university}{Universitas Gadjah Mada}
-\newcommand{\@facultyIna}{Fakultas Teknik}
-\newcommand{\@facultyEng}{Faculty of Engineering}
-\newcommand{\@departmentIna}{Departemen Teknik Elektro dan Teknologi Informasi}
-\newcommand{\@departmentEng}{Department of Electrical Engineering and Information Technology}
+\newcommand{\@facultyIna}{Fakultas Kedokteran, Kesehatan Masyarakat, dan Keperawatan}
+\newcommand{\@facultyEng}{Faculty of Medicine, Public Health, and Nursing}
+\newcommand{\@departmentIna}{Program Studi Doktor Ilmu Kedokteran dan Kesehatan}
+\newcommand{\@departmentEng}{Doctoral Program Medical dan Health Sciences}
 \newcommand{\@graduateIna}{Program Pascasarjana}
 \newcommand{\@graduateEng}{Graduate Program}
 \newcommand*{\major}[1]{\newcommand{\@major}{#1}}
@@ -265,9 +266,9 @@
 					{\MakeUppercase{\@program \vspace{1em} Program}}\\
 					\iftoggle{lang}{\MakeUppercase{\@departmentIna}}{\MakeUppercase{\@departmentEng}} \\
 					\iftoggle{lang}{\MakeUppercase{\@facultyIna}}{\MakeUppercase{\@facultyEng}}
-					\MakeUppercase{\@university} \\ 
-					\MakeUppercase{\@city} \\ 
-					\@yearsubmit	
+					\MakeUppercase{\@university} \\
+					\MakeUppercase{\@city} \\
+					\@yearsubmit
 				}
 			\end{singlespacing}
 		\end{center}
@@ -292,7 +293,7 @@
 					{submitted in partial fulfillment of the requirements \\ for the degree of master}\\
 				\vspace{12pt}
 				\iftoggle{lang}
-					{Program Studi \@program} 
+					{Program Studi \@program}
 					{\@program \vspace{1em} Program}\\
 				\@major \\
 				\iftoggle{lang}{\@departmentIna}{\@departmentEng} \\
@@ -309,11 +310,11 @@
 				\iftoggle{lang}{Kepada}{To}\\
 				\vspace{0.4em}
 				\textbf{
-					\iftoggle{lang}{\MakeUppercase{\@graduateIna}}{\MakeUppercase{\@graduateEng}} \\ 
-					\iftoggle{lang}{\MakeUppercase{\@facultyIna}}{\MakeUppercase{\@facultyEng}} \\ 
-					\MakeUppercase{\@university} \\ 
-					\MakeUppercase{\@city} \\ 
-					\@yearsubmit	
+					\iftoggle{lang}{\MakeUppercase{\@graduateIna}}{\MakeUppercase{\@graduateEng}} \\
+					\iftoggle{lang}{\MakeUppercase{\@facultyIna}}{\MakeUppercase{\@facultyEng}} \\
+					\MakeUppercase{\@university} \\
+					\MakeUppercase{\@city} \\
+					\@yearsubmit
 				}
 			\end{singlespacing}
 		\end{center}
@@ -333,7 +334,7 @@
 				\MakeUppercase{\fontsize{14pt}{16pt}\selectfont\@title}\\
 				\vspace{1.5cm}
 				\iftoggle{lang}
-					{Bidang Studi \@program} 
+					{Bidang Studi \@program}
 					{\@program \vspace{1em} Program}\\
 				\vfill
 				\includegraphics[width=0.5\textwidth]{#1}
@@ -346,11 +347,11 @@
 				\iftoggle{lang}{Kepada}{To}\\
 				\vspace{0.4em}
 				\textbf{
-					\iftoggle{lang}{\MakeUppercase{\@graduateIna}}{\MakeUppercase{\@graduateEng}} \\ 
-					\iftoggle{lang}{\MakeUppercase{\@facultyIna}}{\MakeUppercase{\@facultyEng}} \\ 
-					\MakeUppercase{\@university} \\ 
-					\MakeUppercase{\@city} \\ 
-					\@yearsubmit	
+					\iftoggle{lang}{\MakeUppercase{\@graduateIna}}{\MakeUppercase{\@graduateEng}} \\
+					\iftoggle{lang}{\MakeUppercase{\@facultyIna}}{\MakeUppercase{\@facultyEng}} \\
+					\MakeUppercase{\@university} \\
+					\MakeUppercase{\@city} \\
+					\@yearsubmit
 				}
 			\end{singlespacing}
 		\end{center}
@@ -443,13 +444,13 @@
 					{Telah dipertahankan di depan dewan penguji}
 					{Has been presented} \\
 				\iftoggle{lang}
-					{Pada tanggal: \@examdate} 
+					{Pada tanggal: \@examdate}
 					{on \@examdate}\\
 				\vspace{1em}
 				\iftoggle{lang}
 					{\textbf{Susunan Dewan Penguji}}
 					{\textbf{Thesis Examiners}}\\
-				
+
 				\begin{center}
 					\begin{tabular}{ccc}
 						\iftoggle{lang}{Pembimbing I}{Supervisor I} &\hspace{2cm} & \iftoggle{lang}{Anggota Dewan Penguji Lain}{Examiners} \\
@@ -463,22 +464,22 @@
 					\end{tabular}
 				\end{center}
 				\vspace{0.5cm}
-				
+
 				\iftoggle{lang}
-					{Tesis ini telah diterima sebagai salah satu persyaratan \\ untuk memperoleh gelar Magister} 
+					{Tesis ini telah diterima sebagai salah satu persyaratan \\ untuk memperoleh gelar Magister}
 					{This thesis has been accepted as a partial fulfillment \\ for the degree of Master}\\
 				\vspace{0.3cm}
-				
+
 				\iftoggle{lang}{Tanggal:}{Date: $\ldots\ldots$} \\
 				\iftoggle{lang}
-					{Pengelola Program Studi \@program} 
+					{Pengelola Program Studi \@program}
 					{Program Coordinator of \@program}\\
 				\vspace{1.3cm}
 				\textbf{\underline{\@programcoorName}}\\
 				NIP. \@programcoorNIP \\
 				\vspace{0.5cm}
-				
-				\iftoggle{lang}{Mengetahui,\\}{} 
+
+				\iftoggle{lang}{Mengetahui,\\}{}
 				\iftoggle{lang}
 					{Ketua Departemen/Wakil Penanggung Jawab Program Studi}
 					 {Head of Department}\\
@@ -486,8 +487,8 @@
 				\vspace{1.3cm}
 				\textbf{\underline{\@depheadName}}\\
 				NIP. \@depheadNIP \\
-				
-			\end{singlespacing}			
+
+			\end{singlespacing}
 		\end{center}
 		\addcontentsline{toc}{chapter}{\approvalpage}
 	}
@@ -525,12 +526,12 @@
 						\textbf{\underline{\getsupervisor{1}{1}}}& &
 						\ldots\ldots\ldots \\
 						(Promotor) & & \\
-						
+
 						\vspace{0.6cm} & \vspace{0.6cm} & \vspace{0.6cm}\\
 						\textbf{\underline{\getsupervisor{2}{1}}}& &
 						\ldots\ldots\ldots \\
 						(Ko-promotor) & & \\
-						
+
 						\vspace{0.6cm} & \vspace{0.6cm} & \vspace{0.6cm}\\
 						\textbf{\underline{\getsupervisor{3}{1}}}& &
 						\ldots\ldots\ldots \\
@@ -538,7 +539,7 @@
 					\end{tabular}
 				\end{center}
 
-			\end{singlespacing}			
+			\end{singlespacing}
 		\end{center}
 		\addcontentsline{toc}{chapter}{\approvalpage}
 		\newpage
@@ -573,11 +574,11 @@
 									Tanda Tangan & \hspace{3cm} & Tanggal\\
 								}{}
 							}
-							
+
 						\end{longtable}
 					\end{center}
-					
-				\end{singlespacing}			
+
+				\end{singlespacing}
 			\end{center}
 	}
 }
@@ -626,7 +627,7 @@
 	\fancyfoot[C]{\thepage}
 	\begin{center}
 	\vspace*{-4cm}
-	\noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{#1}}		
+	\noindent\makebox[\textwidth]{\includegraphics[width=\paperwidth]{#1}}
 	\end{center}
 	\addcontentsline{toc}{chapter}{\statementname}
 	\clearpage
@@ -647,7 +648,7 @@
 %======================================
 \newcommand{\chapternomenclature}[1]{
 	\chapter*{\nomenclaturename}
-	\input{#1}	
+	\input{#1}
 	\addcontentsline{toc}{chapter}{\nomenclaturename}
 }
 
@@ -666,7 +667,7 @@
 \newcommand{\chapterintisari}[1]{
 	\chapter*{INTISARI}
 	\input{#1}
-	\addcontentsline{toc}{chapter}{INTISARI}	
+	\addcontentsline{toc}{chapter}{INTISARI}
 }
 
 %======================================
@@ -734,21 +735,21 @@
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 
-\lstdefinestyle{mystyle}{ 
+\lstdefinestyle{mystyle}{
 	commentstyle=\color{codegreen},
 	keywordstyle=\color{magenta},
 	numberstyle=\tiny\color{codegray},
 	stringstyle=\color{codepurple},
 	basicstyle=\small,
-	breakatwhitespace=false,         
-	breaklines=true,                 
-	captionpos=b,                    
-	keepspaces=true,                 
-	numbers=left,                    
-	numbersep=5pt,                  
-	showspaces=false,                
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
 	showstringspaces=false,
-	showtabs=false,                  
+	showtabs=false,
 	tabsize=2
 }
 \lstset{style=mystyle}
@@ -791,7 +792,7 @@
 \titleformat*{\subsubsection}{\raggedright\normalfont\normalsize\bfseries}
 
 
-% Starting the main matter	
+% Starting the main matter
 \newcommand{\startmain}{
 	\clearpage
 	\setcounter{page}{1}
@@ -800,10 +801,10 @@
 	\nopagebreak
 	\setlength{\parindent}{1.25cm}
 }
-	
+
 
 % Main chapter head styling
-\renewcommand{\@makechapterhead}[1]{%   
+\renewcommand{\@makechapterhead}[1]{%
 	{\parindent \z@ \centering \bfseries
 	\fontsize{14pt}{16pt}\selectfont
 	\chaptername \space \thechapter
@@ -816,9 +817,9 @@
 \renewcommand{\@makeschapterhead}[1]{%
 	{\parindent \z@ \centering \bfseries
 		\fontsize{14pt}{16pt}\selectfont
-		\par\nobreak 
-		 \MakeUppercase{#1}\par\nobreak 
-		 \vskip 20\p@ 
+		\par\nobreak
+		 \MakeUppercase{#1}\par\nobreak
+		 \vskip 20\p@
 }}
 
 % References
@@ -840,14 +841,14 @@
 	\renewcommand{\thepage}{L-\arabic{page}}
 	\renewcommand \thesection {L.\@arabic\c@section}
 	\renewcommand\thesubsection {L.\@arabic\c@section.\@arabic\c@subsection}
-	
+
 	% Add to TOC
 	\addcontentsline{toc}{chapter}{\appendixname}
 %	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 	% Page number style
 	\fancyhf{}
 	\fancyfoot[C]{\thepage}
-	
+
 	\fontsize{14pt}{16pt}\selectfont
 	\centering\MakeUppercase{\normalfont\bfseries \appendixname }\\
 	\vspace{20pt}
