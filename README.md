@@ -1,7 +1,7 @@
-# Latex Template for Thesis Writing at DTETI UGM
+# Latex Template for Thesis Writing at FK UGM
 
 ## Info
-This template can be used for bachelor, master, and doctoral thesis at DTETI UGM, even though for the last one, it still can be considered as a "beta" release. Send me email or create pull-request if you have improvements for this template.
+This template is a modification from [LaTeX Template for Thesis Writing at DTETI UGM](https://github.com/canggihpw/thesisdtetiugm). It can be used for bachelor, master, and doctoral thesis at FK UGM, even though for the last one, it still can be considered as a "beta" release. Send me email or create pull-request if you have improvements for this template.
 
 ## What's new
 [2020-01-28] You can use command **\printendorsementpdf** to include your own pdf file containing the endorsement. Otherwise, use **\printendorsement**
@@ -13,7 +13,7 @@ In case some **sty files** are not available in your TeX installation, just copy
 ## Content:
 ### Main files
 ```
-|-- thesisdtetiugm.cls (Class file)
+|-- thesisfkugm.cls (Class file)
 |-- thesis_template.tex (The template file)
 ```
 ### Content directory
